@@ -8,7 +8,8 @@ fetch(url, { cache: "no-cache" })
     .then((data) => {
         adviceIdEl.innerHTML = `Advice #${data.slip.id}`;
         adviceTextEl.innerHTML = data.slip.advice;
-    });
+    })
+    .catch((err) => console.error(err));
 
 rollTheDiceBtn.addEventListener("click", function (e) {
     fetch(url, { cache: "no-cache" })
