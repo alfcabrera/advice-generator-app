@@ -601,6 +601,18 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 .absolute {
   position: absolute;
 }
@@ -702,6 +714,10 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-3xl {
